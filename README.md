@@ -38,7 +38,7 @@ Now, when loading the now extracted, beam-specific data, afterwards the codes do
 ![Image](https://github.com/reneefredensborg/DIR-from-IS2-/blob/main/Figures/distr_counts.jpg)
 
 ## Installation 
-No required installation package or description. Install JupyterNotebook (e.g. by installing Anaconda3) and go through that. If necessary, install additional packages using ```pip install XXX ``` similar to Python in the Anaconda Terminal. All required packages are also shown, either when used or in the initialisation, in the JupyterNotebook. 
+No required installation package or description. Install JupyterNotebook (e.g. by installing Anaconda3) and input the code as you wish in the JupyterNotebook. If necessary, install additional packages using ```pip install XXX``` similar to Python in the Anaconda Terminal. All required packages are also shown, either when used or in the initialisation, in the JupyterNotebook. 
 
 ## References 
 XXXX (To be submitted to The Cryosphere within October 2020). 
