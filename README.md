@@ -7,7 +7,7 @@ Code repository for producing an estimate of degree of sea ice ridging in the Ba
 v1.0: This initial repository was used to process ICESat-2 DIR estimates from the first winter season (spring 2019), based on ICESat-2 tracks with available data in the Bay of Bothnia (Baltic Sea) during this period. 
 
 Some of the plots (e.g. distribution plots, and analysis hereof) was done in R Studio ( ```code_distributions_IS2.R```)
-The rest of the code, inclusding extraction of the ATL03 beam specific data, data analysis and maps, are generated in the JupyterNotebook (```IR_from_IS2.ipynb```)
+The rest of the code, including extraction of the ATL03 beam specific data, data analysis and maps, are generated in the JupyterNotebook (```IR_from_IS2.ipynb```)
 
 #### Data 
 ICESat-2 ATL03 Global Geolocated Photon Heights is publibly available at NASA EarthSearch. 
