@@ -41,6 +41,6 @@ Now, when loading the now extracted, beam-specific data, afterwards the codes do
 No required installation package or description. Install JupyterNotebook (e.g. by installing Anaconda3) and input the code as you wish in the JupyterNotebook. If necessary, install additional packages using ```pip install XXX``` similar to Python in the Anaconda Terminal. All required packages are also shown, either when used or in the initialisation, in the JupyterNotebook. 
 
 ## References 
-redensborg Hansen, R. M., Rinne, E., Farrell, S. L., and Skourup, H.: Estimation of degree of sea ice ridging in the Bay of Bothnia based on geolocated photon heights from ICESat-2, The Cryosphere Discuss., https://doi.org/10.5194/tc-2020-315, in review, 2020.
+Fredensborg Hansen, R. M., Rinne, E., Farrell, S. L., and Skourup, H.: Estimation of degree of sea ice ridging in the Bay of Bothnia based on geolocated photon heights from ICESat-2, The Cryosphere Discuss., https://doi.org/10.5194/tc-2020-315, in review, 2020.
 
 Fredensborg Hansen, R (2020), Assessment of NASA’s ICESat-2 photon counting laser altimeter in the Baltic Sea to support ice mapping estimates of ridging and local bathymetry, Master's Thesis, Aalto University, Espoo, Finland, URL: http://urn.fi/URN:NBN:fi:aalto-202006213906
