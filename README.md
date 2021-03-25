@@ -45,8 +45,7 @@ Now, when loading the now extracted, beam-specific data, afterwards the codes do
 
 * Show photon profile and elevation anomalies overlaid 
 
-
-![Image](https://github.com/reneefredensborg/DIR-from-IS2-/blob/main/Figures/photon profile.png)
+![Image](https://github.com/reneefredensborg/DIR-from-IS2-/blob/main/Figures/photon_profile.png)
 
 
 ## Installation 
