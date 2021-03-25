@@ -29,7 +29,7 @@ Now, when loading the now extracted, beam-specific data, afterwards the codes do
 * Calculate surface anomalies (maximum elevation subtracted mean elevation of segments of 150 photons)
 * Investigate distributions and estimate threshold for DIR classification for ridge sails/surface anomalies (R-code)
 
-![Image](https://github.com/reneefredensborg/DIR-from-IS2-/blob/main/Figures/distr_IS2.png)
+![Image](https://github.com/reneefredensborg/DIR-from-IS2-/blob/main/Figures/distr.png)
 
 * Categorise DIR based on the threshold estimated 
 
