@@ -39,6 +39,16 @@ Now, when loading the now extracted, beam-specific data, afterwards the codes do
 
 ![Image](https://github.com/reneefredensborg/DIR-from-IS2-/blob/main/Figures/distr_counts.jpg)
 
+* Show the elevation anomalies (surface anomalies) on top of SAR image
+
+![Image](https://github.com/reneefredensborg/DIR-from-IS2-/blob/main/Figures/SAR.png)
+
+* Show photon profile and elevation anomalies overlaid 
+
+
+![Image](https://github.com/reneefredensborg/DIR-from-IS2-/blob/main/Figures/photon profile.png)
+
+
 ## Installation 
 No required installation package or description. Install JupyterNotebook (e.g. by installing Anaconda3) and input the code as you wish in the JupyterNotebook. If necessary, install additional packages using ```pip install XXX``` similar to Python in the Anaconda Terminal. All required packages are also shown, either when used or in the initialisation, in the JupyterNotebook. 
 
