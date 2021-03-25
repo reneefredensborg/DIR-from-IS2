@@ -75,15 +75,15 @@ mod_DIR4 = density(per_DIR4_m)$x[which.max(density(per_DIR4_m)$y)]
 sd_DIR4 = sd(per_DIR4_m)
 
 #title 'Distribution of N = 150 segments from DIR zones'
-plot(density(per_DIR2_m), col = 'black',lty = 1, lwd = 1,xlim=c(0, 1.2), ylim = c(0.1, 10), xlab = 'Elevation anomaly (m)', main = '')
+plot(density(per_DIR2_m), col = 'green',lty = 1, lwd = 1,xlim=c(0, 1.2), ylim = c(0.1, 10), xlab = 'Elevation anomaly (m)', main = '')
 arrows(x0=mod_DIR2-sd_DIR2, y0=max(density(per_DIR2_m)$y), x1=mod_DIR2+sd_DIR2, y1=max(density(per_DIR2_m)$y), code=3, angle=90, length=0.05, col="black", lwd=1)
 lines(density(per_DIR3_m), col = 'blue',lty = 1,lwd = 1, xlim=c(0, 0.8), xlab = NULL, main = NULL)
 arrows(x0=mod_DIR3-sd_DIR3, y0=max(density(per_DIR3_m)$y), x1=mod_DIR3+sd_DIR3, y1=max(density(per_DIR3_m)$y), code=3, angle=90, length=0.05, col="black", lwd=1, lty =1)
 lines(density(per_DIR4_m), col = 'red', lty = 1, lwd = 1,xlim=c(0, 0.8), xlab = NULL, main = NULL)
 arrows(x0=mod_DIR4-sd_DIR4, y0=max(density(per_DIR4_m)$y), x1=mod_DIR4+sd_DIR4, y1=max(density(per_DIR4_m)$y), code=3, angle=90, length=0.05, col="black", lwd=1, lty =1)
-legend("bottomright", legend = c('DIR2', 'DIR3', 'DIR4'), col = c('black', 'blue', 'red'),  lty=c(1, 1,1), cex = 2)
+legend("bottomright", legend = c('DIR2', 'DIR3', 'DIR4'), col = c('green', 'blue', 'red'),  lty=c(1, 1,1), cex = 2)
 minor.tick(nx=4, ny=4, tick.ratio=0.5, x.args = list(), y.args = list())
-legend('topright', legend = c(paste('DIR2 modal value =', toString(format(round(mod_DIR2, 3), nsmall = 3)),'m'), paste('DIR3 modal value =', toString(format(round(mod_DIR3, 3), nsmall = 3)), 'm'), paste('DIR4 modal value =', toString(format(round(mod_DIR4, 3), nsmall = 3)), 'm')), text.col = c('black', 'blue', 'red'), bty = 'n', cex = 2)
+legend('topright', legend = c(paste('DIR2 modal value =', toString(format(round(mod_DIR2, 3), nsmall = 3)),'m'), paste('DIR3 modal value =', toString(format(round(mod_DIR3, 3), nsmall = 3)), 'm'), paste('DIR4 modal value =', toString(format(round(mod_DIR4, 3), nsmall = 3)), 'm')), text.col = c('green', 'blue', 'red'), bty = 'n', cex = 2)
 legend('topleft', '(a)', cex = 2, bty = 'n')
 
 mod_DIR2 = density(per_DIR2_80)$x[which.max(density(per_DIR2_80)$y)]
@@ -93,12 +93,12 @@ sd_DIR3 = sd(per_DIR3_m)
 mod_DIR4 = density(per_DIR4_80)$x[which.max(density(per_DIR4_80)$y)]
 sd_DIR4 = sd(per_DIR4_m)
 
-plot(density(per_DIR2_80), lty = 1, xlim = c(0.1, 1.2), ylim = c(0.1, 15), xlab = 'Elevation anomaly (m)',  main = '80th percentile distribution')
+plot(density(per_DIR2_80), lty = 1, xlim = c(0.1, 1.2), ylim = c(0.1, 15), col = 'green', xlab = 'Elevation anomaly (m)',  main = '80th percentile distribution')
 lines(density(per_DIR3_80), lty = 1, xlab = NULL, main = NULL, col = 'blue')
 lines(density(per_DIR4_80), lty = 1, xlab = NULL, main = NULL, col = 'red')
 #legend("topright", legend = c('DIR2', 'DIR3', 'DIR4'), col = c('black', 'black', 'black'),  lty=c(1, 2, 3))
 minor.tick(nx=4, ny=4, tick.ratio=0.5, x.args = list(), y.args = list())
-legend('topright', legend = c(paste('DIR2 modal value =', toString(format(round(mod_DIR2, 3), nsmall = 3)),'m'), paste('DIR3 modal value =', toString(format(round(mod_DIR3, 3), nsmall = 3)), 'm'), paste('DIR4 modal value =', toString(format(round(mod_DIR4, 3), nsmall = 3)), 'm')), text.col = c('black', 'blue', 'red'), bty = 'n', cex = 2)
+legend('topright', legend = c(paste('DIR2 modal value =', toString(format(round(mod_DIR2, 3), nsmall = 3)),'m'), paste('DIR3 modal value =', toString(format(round(mod_DIR3, 3), nsmall = 3)), 'm'), paste('DIR4 modal value =', toString(format(round(mod_DIR4, 3), nsmall = 3)), 'm')), text.col = c('green', 'blue', 'red'), bty = 'n', cex = 2)
 legend('topleft', '(b)', cex = 2, bty = 'n')
 
 mod_DIR2 = density(per_DIR2_90)$x[which.max(density(per_DIR2_90)$y)]
@@ -108,12 +108,12 @@ sd_DIR3 = sd(per_DIR3_m)
 mod_DIR4 = density(per_DIR4_90)$x[which.max(density(per_DIR4_90)$y)]
 sd_DIR4 = sd(per_DIR4_m)
 
-plot(density(per_DIR2_90), lty = 1,  xlim = c(0.1, 1.2), ylim = c(0.1,15), xlab = 'Elevation anomaly (m)',  main = '90th percentile distribution')
+plot(density(per_DIR2_90), lty = 1,  xlim = c(0.1, 1.2), ylim = c(0.1,15), col = 'green', xlab = 'Elevation anomaly (m)',  main = '90th percentile distribution')
 lines(density(per_DIR3_90), lty = 1, xlab = NULL, main = NULL, col = 'blue')
 lines(density(per_DIR4_90), lty = 1, xlab = NULL, main = NULL, col = 'red')
 #legend("topright", legend = c('DIR2', 'DIR3', 'DIR4'), col = c('black', 'black', 'black'),  lty=c(1, 2, 3))
 minor.tick(nx=4, ny=4, tick.ratio=0.5, x.args = list(), y.args = list())
-legend('topright', legend = c(paste('DIR2 modal value =', toString(format(round(mod_DIR2, 3), nsmall = 3)),'m'), paste('DIR3 modal value =', toString(format(round(mod_DIR3, 3), nsmall = 3)), 'm'), paste('DIR4 modal value =', toString(format(round(mod_DIR4, 3), nsmall = 3)), 'm')), text.col = c('black', 'blue', 'red'), bty = 'n', cex = 2)
+legend('topright', legend = c(paste('DIR2 modal value =', toString(format(round(mod_DIR2, 3), nsmall = 3)),'m'), paste('DIR3 modal value =', toString(format(round(mod_DIR3, 3), nsmall = 3)), 'm'), paste('DIR4 modal value =', toString(format(round(mod_DIR4, 3), nsmall = 3)), 'm')), text.col = c('green', 'blue', 'red'), bty = 'n', cex = 2)
 legend('topleft', '(c)', cex = 2, bty = 'n')
 
 mod_DIR2 = density(per_DIR2_95)$x[which.max(density(per_DIR2_95)$y)]
@@ -123,12 +123,12 @@ sd_DIR3 = sd(per_DIR3_m)
 mod_DIR4 = density(per_DIR4_95)$x[which.max(density(per_DIR4_95)$y)]
 sd_DIR4 = sd(per_DIR4_m)
 
-plot(density(per_DIR2_95), lty = 1,  xlim = c(0.1, 1.2), ylim = c(0.1,15), xlab = 'Elevation anomaly (m)',  main = '95th percentile distribution')
+plot(density(per_DIR2_95), lty = 1,  xlim = c(0.1, 1.2), ylim = c(0.1,15), col = 'green', xlab = 'Elevation anomaly (m)',  main = '95th percentile distribution')
 lines(density(per_DIR3_95), lty = 1, xlab = NULL, main = NULL, col = 'blue')
 lines(density(per_DIR4_95), lty = 1, xlab = NULL, main = NULL, col = 'red')
 #legend("topright", legend = c('DIR2', 'DIR3', 'DIR4'), col = c('black', 'black', 'black'),  lty=c(1, 2, 3))
 minor.tick(nx=4, ny=4, tick.ratio=0.5, x.args = list(), y.args = list())
-legend('topright', legend = c(paste('DIR2 modal value =', toString(format(round(mod_DIR2, 3), nsmall = 3)),'m'), paste('DIR3 modal value =', toString(format(round(mod_DIR3, 3), nsmall = 3)), 'm'), paste('DIR4 modal value =', toString(format(round(mod_DIR4, 3), nsmall = 3)), 'm')), text.col = c('black', 'blue', 'red'), bty = 'n', cex = 2)
+legend('topright', legend = c(paste('DIR2 modal value =', toString(format(round(mod_DIR2, 3), nsmall = 3)),'m'), paste('DIR3 modal value =', toString(format(round(mod_DIR3, 3), nsmall = 3)), 'm'), paste('DIR4 modal value =', toString(format(round(mod_DIR4, 3), nsmall = 3)), 'm')), text.col = c('green', 'blue', 'red'), bty = 'n', cex = 2)
 legend('topleft', '(d)', cex = 2, bty = 'n')
 
 mod_DIR2 = density(per_DIR2_99)$x[which.max(density(per_DIR2_99)$y)]
@@ -138,11 +138,11 @@ sd_DIR3 = sd(per_DIR3_m)
 mod_DIR4 = density(per_DIR4_99)$x[which.max(density(per_DIR4_99)$y)]
 sd_DIR4 = sd(per_DIR4_m)
 
-plot(density(per_DIR2_99), lty = 1,  xlim = c(0.1, 1.2), ylim = c(0.1, 15), xlab = 'Elevation anomaly (m)',  main = '99th percentile distribution')
+plot(density(per_DIR2_99), lty = 1,  xlim = c(0.1, 1.2), ylim = c(0.1, 15), col = 'green', xlab = 'Elevation anomaly (m)',  main = '99th percentile distribution')
 lines(density(per_DIR3_99), lty = 1, xlab = NULL, main = NULL, col = 'blue')
 lines(density(per_DIR4_99), lty = 1, xlab = NULL, main = NULL, col = 'red')
 #legend("topright", legend = c('DIR2', 'DIR3', 'DIR4'), col = c('black', 'black', 'black'),  lty=c(1, 2, 3))
 minor.tick(nx=4, ny=4, tick.ratio=0.5, x.args = list(), y.args = list())
-legend('topright', legend = c(paste('DIR2 modal value =', toString(format(round(mod_DIR2, 3), nsmall = 3)),'m'), paste('DIR3 modal value =', toString(format(round(mod_DIR3, 3), nsmall = 3)), 'm'), paste('DIR4 modal value =', toString(format(round(mod_DIR4, 3), nsmall = 3)), 'm')), text.col = c('black', 'blue', 'red'), bty = 'n', cex = 2)
+legend('topright', legend = c(paste('DIR2 modal value =', toString(format(round(mod_DIR2, 3), nsmall = 3)),'m'), paste('DIR3 modal value =', toString(format(round(mod_DIR3, 3), nsmall = 3)), 'm'), paste('DIR4 modal value =', toString(format(round(mod_DIR4, 3), nsmall = 3)), 'm')), text.col = c('green', 'blue', 'red'), bty = 'n', cex = 2)
 legend('topleft', '(e)', cex = 2, bty = 'n')
 
